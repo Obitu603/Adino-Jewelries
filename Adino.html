@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adino Jewelry</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+  <script src = "script.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "uv9YYGObhFfAxg0LM",
+      });
+   })();
+</script>
+</head>
+<style>
+  
+</style>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="images/logo2.png" alt="Elegant Jewelry">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+<!-- Welcome Section -->
+<section class="welcome" id = "home">
+  <div class="textsec">
+    <h1>Discover Elegance with Adino Jewelry</h1>
+    <p>Experience the finest craftsmanship with our exquisite jewelry collection <br>that brings elegance and charm to every occasion.</p>
+    <button class="btn">learn More</button>
+    <button class="btn">Shop Now</button>
+  </div>
+  
+</section>
+  <!-- Intro Section -->
+  <section id="about" class="intro">
+    <div class="intro-text">
+      <h1>Why Adino Jewelry?</h1>
+      <p>We make timeless necklaces that add grace to any outfit, Perfectly <br> crafted rings for every style and occasion & find your perfect pair <br> of earrings to elevate your look</p>
+      <button class="btn">Explore</button>
+    </div>
+    <div class="intro-image">
+      <img src="images/adino4.jpeg" alt="Elegant Jewelry">
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2 class="headings">Our Collection</h2>
+ 
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('necklaces')"> Necklaces</button>
+        <button class="btn" onclick="filterSelection('hand-bands')"> Hand-Band</button>
+        <button class="btn" onclick="filterSelection('waiste-beads')"> Waiste Beads</button>
+      </div>
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+ 
+
+        <div class="mycards">
+<!-- necklaces  starts-->
+          <div class="column necklaces">
+            <div class="card" id = "card1">
+                <div class="details">
+                    <div class="cardHeader">Rose Gold Heart Pendant</div>
+                    <div class="cardText">
+                      A timeless classic, the Elegant Pearl Necklace features luminous freshwater pearls that exude sophistication. Perfect for weddings, anniversaries,
+                       or formal events.
+                        Price: $150
+                    </div>
+                    <div class="button">Order now</div>
+                </div>
+            </div> 
+          </div>
+
+          <div class="column necklaces">
+            <div class="card"id = "card2">
+                <div class="details">
+                  <div class="cardHeader">Elegant Pearl </div>
+                  <div class="cardText">
+                    Show your love with this stunning Rose Gold Heart Pendant Necklace. The intricate heart design, adorned with sparkling 
+                    cubic zirconia stones, is a perfect gift for someone special.
+                      Price: $100
+                  </div>
+                    <div class="button">Order now</div>
+                </div>
+            </div> 
+          </div>
+
+          
+          <div class="column necklaces">
+            <div class="card" id = "card3">
+                <div class="details">
+                    <div class="cardHeader">Bohemian T. Statement</div>
+                    <div class="cardText">
+                      Unleash your inner free spirit with the Bohemian Turquoise Statement Necklace. Featuring vibrant turquoise stones and an antique bronze finish,
+                       this piece is perfect for making bold fashion statements. Price: $200
+                    </div>
+                    <div class="button">Order now</div>
+                </div>
+            </div> 
+          </div>
+
+          <div class="column necklaces">
+            <div class="card" id = "card4">
+                <div class="details">
+                    <div class="cardHeader">Floral Charm Gold</div>
+                    <div class="cardText">
+                      Bring a touch of nature to your jewelry collection with the Floral Charm Gold Necklace.
+                       Featuring delicate floral designs, this piece is perfect for adding a feminine touch to your style.
+                       Price: $80
+                    </div>
+                    <div class="button">Order now</div>
+                </div>
+            </div> 
+          </div>
+
+          <!-- necklaces  ends-->
+
+          <!-- hand-band starts-->
+          <div class="column hand-bands">
+            <div class="card" id = "card5">
+                <div class="details">
+                    <div class="cardHeader">Beaded Boho</div>
+                    <div class="cardText">
+                      Celebrate bohemian style with the Beaded Boho Handband. Decorated with colorful beads and intricate patterns,
+                       this accessory is ideal for festivals, vacations, or casual outings.
+                       Price: $25
+                    </div>
+                    <div class="button">Order now</div>
+                </div>
+            </div> 
+          </div>
+
+          
+          <div class="column hand-bands">
+            <div class="card" id = "card6">
+                <div class="details">
+                    <div class="cardHeader"> Crystal Charm</div>
+                    <div class="cardText">
+                      Enhance your elegance with the Crystal Charm Handband. Adorned with sparkling crystals and a sleek chain design, 
+                      this handband is the perfect accessory for formal occasions or evening wear.
+                      Price: $20
+                    </div>
+                    <div class="button">Order now</div>
+                </div>
+            </div> 
+          </div>
+
+          
+          <div class="column hand-bands">
+            <div class="card"id = "card7">
+                <div class="details">
+                    <div class="cardHeader">Pearl and Floral</div>
+                    <div class="cardText">
+                      Exude charm and grace with the Pearl and Floral Handband. This delicate piece combines soft pearls with floral accents for a feminine and timeless look.
+                      Price: $20
+                    </div>
+                    <div class="button">Order now</div>
+                </div>
+            </div> 
+          </div>
+
+          
+          <div class="column hand-bands">
+            <div class="card"id = "card8">
+                <div class="details">
+                    <div class="cardHeader"> Velvet Knot Turban</div>
+                    <div class="cardText">
+                      Exude charm and grace with the  Velvet Knot Turban Handband.
+                       This delicate piece combines soft pearls with Turban accents for a feminine and timeless look.
+                       Price: $20
+                    </div>
+                    <div class="button">Order now</div>
+                </div>
+            </div> 
+          </div>
+
+          
+            
+
+
+          <!-- hand-band ends-->
+
+          <!-- waiste-beads  starts-->
+          <div class="column waiste-beads">
+          <div class="card" id = "card9">
+              <div class="details">
+                  <div class="cardHeader">Gold Chain</div>
+                  <div class="cardText">
+                    Elevate your style with the Gold Chain Waistband. This elegant piece features a sleek gold chain design with a dangling charm,
+                     perfect for accessorizing dresses, skirts, or pants.
+                     Price: $60
+                  </div>
+                  <div class="button">Order now</div>
+              </div>
+          </div> 
+        </div>
+      
+        <div class="column waiste-beads">
+          <div class="card" id = "card10">
+              <div class="details">
+                  <div class="cardHeader">Pearl-Embellished</div>
+                  <div class="cardText">
+                    Add a touch of sophistication to your outfit with the Pearl-Embellished Waistband. The combination of lustrous pearls and a chic design
+                     makes this piece perfect for weddings, parties, or elegant evenings.
+                     Price: $80
+                  </div>
+                  <div class="button">Order now</div>
+              </div>
+          </div> 
+        </div>
+          <div class="column waiste-beads">
+          <div class="card" id = "card11">
+              <div class="details">
+                  <div class="cardHeader">Beaded Bohemian</div>
+                  <div class="cardText">
+                    Channel your inner free spirit with the Beaded Bohemian Waistband. Decorated with vibrant beads and intricate patterns,
+                    this accessory is ideal for festivals, beach days, or casual styling.
+                  </div>
+                  <div class="button">Order now</div>
+              </div>
+          </div> 
+        </div>
+      
+        <div class="column waiste-beads">
+          <div class="card" id = "card12">
+              <div class="details">
+                  <div class="cardHeader">Rhinestone Chain</div>
+                  <div class="cardText">
+                    Shimmer and shine with the Rhinestone Chain Waistband. Featuring sparkling rhinestones and a delicate chain,
+                    this piece is perfect for making a glamorous statement.
+                  </div>
+                  <div class="button">Order now</div>
+              </div>
+          </div> 
+        </div>
+        <!-- waiste-beads  ends-->
+    </div>
+    </div>
+  </section>
+
+  <!-- Customer Review Section -->
+  <section id="reviews" class="reviews">
+    <h2 class="headings">Customer Reviews</h2>
+    <div class="review-cards">
+      <div class="review-card">
+        <img src="images/joy.png" alt="Customer 1">
+        <p>"Adino Jewelry offers unique pieces that truly stand out!" <br> - Joyce Myles</p>
+      </div>
+      <div class="review-card">
+        <img src="images/david.png" alt="Customer 2">
+        <p>"Excellent service and beautiful jewelry, highly recommended!" <br> - David Ogen</p>
+      </div>
+      <div class="review-card">
+        <img src="images/obitu.webp" alt="Customer 3">
+        <p>"My favorite jewelry store! The quality is unmatched." <br> - Obinna Emmanuel</p>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Message Section -->
+  <section id="contact" class="message">
+    <h2 class="headings">Get in Touch</h2>
+    <form>
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email"id="email" placeholder="Your Email">
+      <textarea id="message"placeholder="Your Message"></textarea>
+      <button type="submit" onclick="sendmail()"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+
+    <p>&copy; 2024 Adino Jewelry | Follow us on
+      <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/adino.jewelry?igsh=MXV3ajZmaGRnbTA3NA=="><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://wa.me/+234 "><i class="fab fa-whatsapp"></i></a>
+    </p>
+  </footer>
+
+  </body>
+</html>
